@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Book Library</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Book Library</h2>
+
+             
+        <ul class="nav nav-tabs" id="mainTab" role="tablist">
+            
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="books-tab" data-bs-toggle="tab" href="#books" role="tab" aria-controls="books" aria-selected="true">Books</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" id="add-tab" data-toggle="tab" href="#add" role="tab" aria-controls="add" aria-selected="false">Add Book</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="booklist-tab" data-toggle="tab" href="#book-list" role="tab" aria-controls="booklist" aria-selected="false">Book List</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="mainTabContent">
+            <div class="tab-pane fade show active" id="books" role="tabpanel" aria-labelledby="books-tab">
+                <div class="row" id="all-books">
+                    <!-- Book cards will be added here -->
+                </div>
+            </div>
+        </div>
+        
+          
+          
+            <div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="add-tab">
+                <div class="container">
+                    <h3>Add Book</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <form id="addBookForm">
+                                <div class="form-group">
+                                    <label for="bookid">Book Id</label>
+                                    <input type="number" class="form-control" id="bookid" name="bookid" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title">Book Title</label>
+                                    <input type="text" class="form-control" id="title" name="title" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="author">Author</label>
+                                    <input type="text" class="form-control" id="author" name="author" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description">Description</label>
+                                    <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Add Book</button>
+                            </form>
+                            <div id="all-books" class="row">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        
+    <div class="tab-pane fade" id="book-list" role="tabpanel" aria-labelledby="booklist-tab">
+                <div class="row" id="book-list">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <ul class="nav nav-tabs" id="mainTab" role="tablist">
+       
+        <li class="nav-item">
+            <a class="nav-link" id="logout-tab" href="#" role="tab" aria-controls="logout" aria-selected="false">Logout</a>
+        </li>
+    </ul>
+
+    
+    <div class="tab-content" id="mainTabContent">
+        
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+         $(document).ready(function() {
+            $('#mainTab a').on('click', function (e) {
+                e.preventDefault();
+                var targetTab = $(this).attr("href");
+                $('.tab-pane').removeClass('show active');
+                $(targetTab).addClass('show active');
+            });
+        });
+       
+    </script>
+    
+</body>
+</html>

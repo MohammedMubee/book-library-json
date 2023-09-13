@@ -1,0 +1,53 @@
+ [
+  {
+    "username": "mohan",
+    "password": "password1",
+    "userid": "u20ca350",
+    "books": [
+      1001,
+      1002,
+      1003,
+      1004,
+      1008,
+      123456,
+      12345,
+      12455,
+      1245678
+    ]
+  },
+  {
+    "username": "mubeen",
+    "password": "password2",
+    "userid": "u20ca309",
+    "books": [
+      1001,
+      1002,
+      1003,
+      12345,
+      12455,
+      123456,
+      1234567,
+      1234
+    ]
+  },
+  {
+    "username": "sam",
+    "password": "password3",
+    "userid": "u20ca351",
+    "books": [
+      1002,
+      1003,
+      1001,
+      1004
+    ]
+  },
+  {
+    "username": "omar",
+    "password": "password4",
+    "userid": "u20ca350",
+    "books": [
+      1003,
+      1004
+    ]
+  }
+]

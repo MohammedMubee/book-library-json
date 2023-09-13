@@ -1,0 +1,24 @@
+[
+  {
+    "username": "mohan",
+    "password": "password1",
+    "userid":"u20ca350",
+    "books":[]
+  }
+  
+  {
+    "username": "mubeen",
+    "password": "password2",
+    "userid":"u20ca309"
+  },
+  {
+    "username":"sam",
+    "password":"password3",
+    "userid":"u20ca351"
+  },
+  {
+    "username":"omar",
+    "password":"password4",
+    "userid":"u20ca350"
+  }
+]

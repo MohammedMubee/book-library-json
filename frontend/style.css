@@ -1,0 +1,103 @@
+
+body {
+    background-color: #f8f9fa;
+}
+
+.tab-pane {
+    padding: 20px;
+}
+
+#all-books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #98e88b; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card h3 {
+    color: #343a40; 
+}
+
+.book-card p {
+    color: #6c757d; 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    margin-bottom: 5px;
+}
+
+.add-to-cart-btn {
+    align-self: flex-end;
+}
+
+body {
+    background-color: black;
+}
+
+    body {
+        background-color: black;
+    }
+
+    .card {
+        background-color: #333;
+        color: white;
+        height: auto; 
+        margin-bottom: 20px;
+        border: none; 
+        border-radius: 10px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px; 
+        height: 100%; 
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        margin-bottom: 15px;
+    }
+
+    .add-to-cart-btn {
+        align-self: flex-end;
+    }
+
+    .scrollable-container {
+        max-height: 400px; 
+        overflow-y: auto;
+    }
